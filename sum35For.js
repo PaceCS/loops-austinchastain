@@ -5,23 +5,26 @@ function sum35For(N) {
     let sum = 0;
     let multiple = 0;
     for (let val = 1; val < N; val += 1) {
+        if (val % 3 == 0) {
+            div3 = true;
+        } else {
+            div3 = false;
+        }
+        if (val % 5 == 0) {
+            div5 = true;
+        } else {
+            div5 = false;
+        }
 
-    if (val % 3 == 0) {
-        div3 = true;
-    } else {
-    div3 = false;
+        if (div3 == true || div5 == true) {
+            sum += val;
+            multiple += 1;
+        }
     }
-    if (val % 5 == 0) {
-        div5 = true;
-    } else {
-        div5 = false;
-    }
-
-    if (div3 == true || div5 == true) {
-        sum = sum + val;
-        multiple = multiple + 1;
-    }
+    console.log('There are ' + multiple + ' multiples of 3 and 5 that are less than ' + N + ".")
+    console.log('Their sum is ' + sum + ".")
 }
+
 
 //Try out your function here.
 sum35For(6);
