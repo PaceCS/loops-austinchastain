@@ -31,21 +31,21 @@ function max(inArray) {
 
 // The function sum will take in an array and log the sum of the array.
 function sum(inArray) {
-let num = inArray[0]
-for(let i=1; i  <inArray.length; i <=1) {
-    sum = sum + inArray[i]
-}
-console.log(The sum of the array is ' +  == + "."')
+    let num = inArray[0];
+    for(let i=1; i  < inArray.length; i +=1) {
+        num = num + inArray[i]
+    }
+    console.log('The sum of the array is '  + num +  ".")
 }
 
 // The function average will take in an array and log the average of the values.
 function average(inArray) {
-
-let average + inArray[0]
-for (let i=1; i < inArray.length; i += 1) {
-        average = average + inArray[i];
-        
-}
+    let num = inArray[0];
+    for(let i=1; i  < inArray.length; i +=1) {
+        num = num + inArray[i]
+    }
+    let avg = num/inArray.length;
+    console
 }
 
 

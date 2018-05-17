@@ -6,9 +6,10 @@ function triangleWhile(userInput) {
     let counter = 0;
 
     // Fill in the while loop with the right condition on counter
-    while(/*Put the right condition here*/) {
+    while(counter < userInput) {
         console.log(row);
         counter += 1;
+            row += '#'
     }
 }
 

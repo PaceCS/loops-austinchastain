@@ -3,19 +3,19 @@ function paceKnightsWhile(userInput) {
     let counter = 1;
 
     // Fill in the appropriate condition for the while loop
-    while(/*Put condition here*/) {
+    while(counter <= userInput) {
         let div3;
         let div5;
 
         // First determine if counter is divisible by 3
-        if () {
+        if (counter % 3 == 0)
             div3 = true;
-        } else {
+        else {
             div3 = false;
         }
 
         // Next determine if counter is divisible by 5
-        if () {
+        if (counter % 5 == 0) {
             div5 = true;
         } else {
             div5 = false;
@@ -23,13 +23,13 @@ function paceKnightsWhile(userInput) {
 
         // Now log the appropriate response to the console
         if (div3 && div5) {
-
+            console.log("Pace Knights")
         } else if (div3) {
-
+            console.log("Pace")
         } else if (div5) {
-
+            console.log("Knights")
         } else {
-
+            console.log(counter)
         }
 
         counter += 1;

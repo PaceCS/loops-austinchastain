@@ -1,19 +1,19 @@
 // paceKnightsFor takes an input userInput and logs an appropriate output
 function paceKnightsFor(userInput) {
     // Put in the appropraite conditions for the for loop
-    for (let val = /*Put condition here*/; val < /*Put condition here*/; val += 1) {
+    for (let val = 1; val <=  userInput ; val += 1) {
         let div3;
         let div5;
 
         // First determine if val is divisible by 3
-        if () {
+        if (val % 3 == 0) {
             div3 = true;
         } else {
             div3 = false;
         }
 
         // Next determine if val is divisible by 5
-        if () {
+        if (val % 5 == 0) {
             div5 = true;
         } else {
             div5 = false;
@@ -21,13 +21,13 @@ function paceKnightsFor(userInput) {
 
         // Now log the appropriate response to the console
         if (div3 && div5) {
-
+            console.log("Pace Knights")
         } else if (div3) {
-
+            console.log("Pace")
         } else if (div5) {
-
+            console.log("Knights")
         } else {
-
+            console.log(val)
         }
     }
 }
